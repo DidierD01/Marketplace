@@ -1,0 +1,132 @@
+/* Cartes statistiques */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.stat-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  text-align: center;
+  flex: 1 1 180px;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.stat-icon {
+  font-size: 2.5rem;
+  color: #ff8800;
+  background: #fff7ed;
+  border-radius: 50%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stat-value {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin-bottom: 4px;
+}
+.stat-label {
+  color: #757575;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+@media (max-width: 900px) {
+  .stats-container { flex-direction: column; gap: 16px; }
+}
+
+/* Tableau moderne */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  background: #fff;
+}
+.table thead th {
+  background: #fbe7df;
+  color: #ff8800;
+  font-weight: 600;
+  border-bottom: 2px solid #ffe0c2;
+}
+.table-hover tbody tr:hover {
+  background: #fff3e0;
+  transition: background 0.2s;
+}
+.table td, .table th {
+  vertical-align: middle;
+}
+.table-responsive {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Badges personnalisés (optionnel, pour les statuts) */
+.badge.bg-success {
+  background-color: #4caf50 !important;
+}
+.badge.bg-secondary {
+  background-color: #bdbdbd !important;
+}
+.badge.bg-primary {
+  background-color: #ff8800 !important;
+}
+.badge.bg-warning {
+  background-color: #ffd54f !important;
+  color: #7a5900 !important;
+}
+
+/* Boutons d'action avec icônes */
+.btn {
+  border-radius: 8px !important;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  transition: box-shadow 0.2s;
+}
+.btn-sm {
+  padding: 0.25rem 0.7rem !important;
+  font-size: 0.95em !important;
+}
+.btn-info {
+  background: #fbe7df !important;
+  color: #ff8800 !important;
+  border: none;
+}
+.btn-info:hover {
+  background: #ff8800 !important;
+  color: #fff !important;
+}
+.btn-warning, .btn-success, .btn-danger {
+  border: none;
+}
+.btn-warning:hover, .btn-success:hover, .btn-danger:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+}
+
+/* Selects dans les tableaux et filtres */
+.form-select,
+.form-select:focus {
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  border-color: #ff8800 !important;
+}
+.form-select-sm {
+  font-size: 0.95em !important;
+  padding: 0.15rem 0.5rem !important;
+}
+
+/* Filtre utilisateurs */
+label[for="statut"] i {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
