@@ -1,0 +1,338 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin-top: 5px;
+  height: 700px;
+}
+
+/* Hero section */
+.hero-newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  min-height: 70vh;
+  padding: 120px 24px 80px 24px;
+  background-image: url('https://image.freepik.com/photos-gratuite/abstrait-arriere-plan-flou-du-magasin-vetements-interieur-au-centre-commercial_44943-543.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-newsletter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.55);
+  z-index: 1;
+}
+.hero-newsletter .text-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-newsletter .title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  border-radius: 16px;
+  padding: 20px 40px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  margin-bottom: 0.5em;
+  font-family: 'Poppins', sans-serif;
+}
+.hero-newsletter .subtitle {
+  font-size: 1.5rem;
+  color: #ff8800;
+  margin-bottom: 1.5em;
+  font-weight: 500;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 24px;
+}
+
+.btn-orange {
+  background: #ff8800;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 36px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-orange:hover, .btn-orange:focus {
+  background: #ff6a00;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(255, 136, 0, 0.18);
+  text-decoration: none;
+}
+.hero-links {
+  margin-top: 24px;
+}
+.hero-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.15rem;
+  transition: color 0.2s;
+}
+.hero-link:hover {
+  color: #ff8800;
+  text-decoration: underline;
+}
+
+.text-content {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  padding: 20px 40px;
+  font-size: 60px;
+  font-weight: bold;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form styling */
+.search-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+}
+
+.form-control {
+  padding: 12px 16px;
+  border: 2px solid #000;
+  border-radius: 8px 0 0 8px;
+  background-color: white;
+  color: #1e1e1e;
+  box-shadow: none;
+  flex-grow: 1;
+}
+
+.btn-dark {
+  border-radius: 8px;
+  padding: 12px 20px;
+  background-color: white;
+  border: 2px solid #ff6a00;
+  color: #ff6a00;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Avatar */
+img.avatar {
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid #ff8800;
+}
+
+.btn-dark:hover {
+  background-color: #ff6a00;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 106, 0, 0.4);
+}
+
+.navbar-brand {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 12px; /* tu peux ajuster ici la distance avec le menu */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img.logo {
+  max-height: 50px; /* contrôle la taille verticale du logo */
+  width: auto;
+}
+
+
+
+/* Responsivity */
+@media (max-width: 768px) {
+  .hero-newsletter {
+    padding: 70px 8px 40px 8px;
+  }
+  .hero-newsletter .title {
+    font-size: 2rem;
+    padding: 10px 16px;
+  }
+  .hero-newsletter .subtitle {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+  }
+  .btn-orange {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    padding: 12px 20px;
+  }
+
+  .search-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-control {
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .btn-dark {
+    border-radius: 8px;
+    width: 100%;
+  }
+}
+
+/* Hidden label for accessibility */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+a.nav-link:hover {border-bottom: 2px solid #ff6a00;}
+.logo_central {padding:15px; background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;}
+  
+/* Style global du footer */
+.footer {
+  background-color: #2d2d2d; /* Fond sombre */
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-logo h1 {
+  font-size: 28px;
+  color: white; /* Couleur orange pour le logo */
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-links ul,
+.footer-socials ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links a,
+.footer-socials a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: #ff6a00; /* Couleur orange au survol */
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+  background-color: #e65c00;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: #ff6a00;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    flex: none;
+  }
+
+  .footer-newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+}

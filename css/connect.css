@@ -1,0 +1,416 @@
+/* From Uiverse.io by alexruix */ 
+.form-box {
+    max-width: 300px;
+    background: #fbe7df;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+  }
+  
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  /*Form text*/
+  .title {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /*Inputs box*/
+  .form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+  }
+  
+  .input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: .9rem;
+    padding: 8px 15px;
+  }
+  
+  .form-section {
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #e7ad7e;
+    box-shadow: rgba(255, 255, 255, 0.08) 0 -1px;
+  }
+
+  .forgot-password:hover {
+    font-weight: bold;
+    color: #ff7b00;
+    transition: color .3s ease;
+  }
+
+  .form-section a {
+    font-weight: bold;
+    color: #000000;
+    transition: color .3s ease;
+  }
+  
+  .form-section a:hover {
+    color: #757575;
+    text-decoration: underline;
+  }
+  
+  /*Button*/
+  .form button {
+    background-color: #ff8800;
+    color: #fff;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #ea923a;
+  }
+
+  /* From Uiverse.io by Xtenso */ 
+.filter-switch {
+  margin-top: 10px;
+  border: 2px solid #ff8800;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 45px; /* Réduit la hauteur */
+  width: 250px; /* Réduit la largeur */
+  overflow: hidden;
+  color: white;
+}
+  
+.filter-switch input {
+  display: none;
+}
+.filter-switch label {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s;
+  font-weight: 500;
+  font-size: 16px; /* Réduit la taille de la police */
+}
+.filter-switch .background {
+  position: absolute;
+  width: 49%;
+  height: 30px; /* Réduit la hauteur */
+  background-color: #ff8800;
+  color: white;
+  top: 5px; /* Ajuste la position verticale */
+  left: 5px; /* Ajuste la position horizontale */
+  border-radius: 30px;
+  transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#option2:checked ~ .background {
+  left: 50%;
+}
+#option1:checked + label[for="option1"] {
+  color: #ffffff;
+  font-weight: bold;
+}
+#option2:checked + label[for="option2"] {
+  color: #ffffff;
+  font-weight: bold;
+}
+#option1:not(:checked) + label[for="option1"],
+#option2:not(:checked) + label[for="option2"] {
+  color: #7d7d7d;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.coolinput label {
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.coolinput input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.coolinput input:focus {
+  border-color: #ff8800;
+}
+
+.coolinput input[type="file"] {
+  padding: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Boutons */
+button {
+  background-color: #ff8800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ea923a;
+}
+
+button[type="submit"][name="reset_password"] {
+  background-color: #ff4d4d;
+}
+
+button[type="submit"][name="reset_password"]:hover {
+  background-color: #e60000;
+}
+
+#suggestionCarousel .carousel-control-prev,
+#suggestionCarousel .carousel-control-next {
+  display: none !important;
+}
+
+/* Avatar */
+img.avatar {
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid #ff8800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  .coolinput input {
+      font-size: 0.9rem;
+  }
+
+  button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+  }
+}
+
+a.nav-link:hover {border-bottom: 2px solid #ff6a00;}
+
+.navbar .connectsearch .connectbtn {
+  border-radius: 8px;
+  padding: 12px 20px;
+  background-color: white;
+  border: 2px solid #ff6a00;
+  color: #ff6a00;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.navbar .connectsearch .connectbtn:hover {
+  background-color: #ff6a00;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 106, 0, 0.4);
+}
+
+.navbar .connectsearch .navbar-brand {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img.logo {
+  max-height: 50px; /* contrôle la taille verticale du logo */
+  width: auto;
+}
+
+.navbar .connectform {
+  padding: 12px 16px;
+  border: 2px solid #000;
+  border-radius: 8px 0 0 8px;
+  background-color: white;
+  color: #1e1e1e;
+  box-shadow: none;
+  flex-grow: 1;
+}
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  margin: 25;
+  padding: 25;
+  box-sizing: border-box;
+}
+
+.navbar .connectsearch {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .connectsearch {
+  display: flex;
+  width: 100%;
+}
+
+/* Style global du footer */
+.footer {
+  background-color: #2d2d2d; /* Fond sombre */
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-logo h1 {
+  font-size: 28px;
+  color:white; /* Couleur orange pour le logo */
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-links ul,
+.footer-socials ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links a,
+.footer-socials a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: #ff6a00; /* Couleur orange au survol */
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+  background-color: #e65c00;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.footer-bottom a {
+  color: #ff6a00;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    flex: none;
+  }
+
+  .footer-newsletter input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+}
